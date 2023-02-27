@@ -17,7 +17,7 @@ h1 {
 }
 
 .circle {
-    width: 40vh;
+    width: 35vh;
     height: 40vh;
     background-color: hsl(200, 50%, 50%);
     border-radius: 50%;
