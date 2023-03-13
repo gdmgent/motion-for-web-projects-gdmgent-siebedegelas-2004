@@ -5,15 +5,21 @@
 body { 
     line-height: 1.5rem; 
     font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/Week04/Oefening-3/assets/background.psd);
 }
 h1, h2, h3 { 
     font-family: 'Odibee Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
 .content {
+    max-width: 1200px;
+    margin: 4rem;
     display: grid;
-    grid-template-columns: 2fr 3fr 3fr 3fr 3fr 2fr;
-    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 1fr;
-    grid-template-areas: 
-    "." "." "." "." "." ".";
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+    "screenshot screenshot title title"
+    "screenshot screenshot photo1 photo1"
+    "new new new photo2"
+    "footer footer footer footer";
 }
