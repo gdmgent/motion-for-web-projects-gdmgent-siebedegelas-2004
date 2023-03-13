@@ -8,3 +8,7 @@ body {
 a {
     color: white;
 }
+
+a.grey {
+    color: rgb(197, 197, 197);
+}
