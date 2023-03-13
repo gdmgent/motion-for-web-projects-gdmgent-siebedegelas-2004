@@ -12,14 +12,14 @@ h1, h2, h3 {
 }
 
 .content {
-    max-width: 1200px;
-    margin: 4rem;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 2fr 2fr;
+    max-width: 1200px;
+    margin: 50px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 250px);
     grid-template-areas:
-    "screenshot screenshot title title"
-    "screenshot screenshot photo1 photo1"
-    "new new new photo2"
-    "footer footer footer footer";
+        "screenshot screenshot title title"
+        "screenshot screenshot photo1 photo1"
+        "new new new photo2"
+        "footer footer footer footer";
 }
