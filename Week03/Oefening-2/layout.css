@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 
+        "header header header"
+        "zijbalk main rechts"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: green;
+    padding: 1rem;
+}
+
+
+aside {
+    grid-area: zijbalk;
+    background-color: red;
+}
