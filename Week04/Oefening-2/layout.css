@@ -9,7 +9,7 @@ body {
         "footer footer footer";
 }
 
-header {
+header {  
     grid-area: header;
     background-color: green;
     padding: 1rem;

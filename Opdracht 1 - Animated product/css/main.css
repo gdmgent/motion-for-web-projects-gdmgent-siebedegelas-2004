@@ -4,12 +4,18 @@
 * { box-sizing: border-box;}
 
 body { 
-    background: #111 url(../assets/background.png) repeat-x top center; 
+    background: #111; 
     background-attachment: fixed;
     color: #fff; 
     padding: 0; margin: 0; 
     line-height: 1.5em; 
-    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*Background animation*/
+    z-index: 1;
+    background: linear-gradient(-45deg, hsl(0, 100%, 50%), green, hsl(240, 100%, 50%), yellow);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation: animate 20s ease infinite;
 }
 
 .content {
@@ -17,31 +23,85 @@ body {
     max-width: 100%;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 250px);
+    grid-template-rows: 250px 250px 250px 250px 70px;
     grid-template-areas: 
-    "spinner spinner spinner title title title"
-    "spinner spinner spinner text text text"
+    "spinner spinner title title title title"
+    "spinner spinner text text text text"
     "card1 card1 card2 card2 card3 card3"
     "card1 card1 card2 card2 card3 card3"
     "footer footer footer footer footer footer";
 }
 
+h1 {font-size: 5rem; font-family: 'Fira Sans', sans-serif; text-transform: uppercase; line-height: 1em; margin: 0;}
+h2 {font-size: 2.5rem; font-family: 'Fira Sans', sans-serif; ; line-height: 1em; margin: 0;}
+h3 { font-size: 2rem; font-family: 'Montserrat', sans-serif; margin: 0;}
+p {font-family: 'Karla', sans-serif; font-size: 1.5rem;}
+
+/* Big fidget spinner animation*/
 .spinner {
     grid-area: spinner;
-    background: green;
+    background: url(../assets/Yellow_Fidget_Spinner.png) no-repeat;
+    padding: 1rem;
+    margin-left: 2rem;
+    background-size: 80%;
+    color:#101931; 
 }
+
+.spinner:hover {
+    display: inline-block;
+    animation: spinner 5s infinite alternate ease-in-out;}
 
 .title {
     grid-area: title;
-    background: red;
+    padding-top: 5rem;
+    color: hsl(50, 100%, 50%);
 }
 
 .text {
     grid-area: text;
-    background: blue;
+    padding-right: 20rem;
 }
 
 .card1 {
     grid-area: card1;
-    background: yellow;
+    background: lightcoral;
+}
+
+.card2 {
+    grid-area: card2;
+    background: pink;
+}
+
+.card3 {
+    grid-area: card3;
+    background: orange;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 18px;
+}
+
+/* Spinner animation */
+@keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+
+/* Background animation */
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
