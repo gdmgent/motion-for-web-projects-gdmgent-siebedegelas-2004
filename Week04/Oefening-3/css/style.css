@@ -78,12 +78,10 @@ h3 { font-size: 1.5rem; margin: 0; text-transform: uppercase; }
 
 }
 footer  {
-    
     background:#fff; 
     color: #333;
     display: flex;
     grid-area: footer; 
-
  }
 
  footer .logo {  }
@@ -115,7 +113,6 @@ footer  {
         "haptic haptic"
         "photo1 photo2"
         "new new"
-        "footer footer"
-        ;
+        "footer footer";
     }
  }
