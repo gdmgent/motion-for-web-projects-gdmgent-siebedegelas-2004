@@ -11,7 +11,7 @@ body {
     line-height: 1.5em; 
 /*Background animation*/
     z-index: 1;
-    background: linear-gradient(-45deg, hsl(281, 100%, 50%), hsl(219, 92%, 57%), hsl(300, 65%, 31%), hsl(271, 65%, 61%));
+    background: linear-gradient(-45deg, hsl(281, 100%, 50%), hsl(219, 92%, 57%), hsl(199, 63%, 37%), hsl(271, 84%, 34%));
     background-size: 400% 400%;
     width: 100%;
     height: 100vh;
@@ -42,44 +42,10 @@ h1 {
 }
 
 .reflect {
-    -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0,0,0,0));
-    transition: all 2s ease;
-}
-  
-.reflect:hover {
-    -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0,0,0,.5));
+  position: relative;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 60px;
-    transition: all 2s ease;
 }
-  
-.reflect span {
-    border-bottom: 3.5px solid hsl(50, 100%, 50%); 
-}
-  
-.reflect:hover span {
-    border-bottom: none;
-}
-  
-.my-btn {
-    font-family: 'Fira Sans', sans-serif; 
-    font-weight: 800;
-    font-size: 1.4rem;
-    background-color: rgb(87, 87, 206);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    cursor: pointer;
-    margin-top: 2rem;
-    text-decoration: none;
-  }
-  
-  .my-btn:hover {
-    background-color: rgb(179, 0, 255);
-    opacity: 0.95;
-  }
-  
 
 h2 {
     font-size: 2.5rem; 
@@ -89,7 +55,7 @@ h2 {
 }
 
 h3 { 
-    font-size: 2.25rem; 
+    font-size: 2rem; 
     font-family: 'Montserrat', sans-serif; 
     margin: 0;
     text-shadow: rgba(0, 0, 0, 0.375) 1px 0 10px;
@@ -106,18 +72,13 @@ p {
     background: url(../assets/Yellow_Fidget_Spinner.png) no-repeat;
     padding: 1rem;
     margin-left: 2rem;
-    background-size: 100% 100%;
+    background-size: 80%;
     color:#101931; 
-    transform-origin: center center;
-    aspect-ratio: 1/1;
-}   
+}
 
 .spinner:hover {
     display: inline-block;
-    animation: spinner 5s infinite alternate ease-in-out;
-    transform-origin: center center;
-}
-    
+    animation: spinner 5s infinite alternate ease-in-out;}
 
 .title {
     grid-area: title;
@@ -137,7 +98,6 @@ p {
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    position: relative;
 }
 
 .card1:hover {
@@ -165,7 +125,6 @@ p {
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    position: relative;
 }
 
 .card2:hover {
@@ -193,7 +152,6 @@ p {
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    position: relative;
 }
 
 .card3:hover {
@@ -217,7 +175,7 @@ p {
 
 .intro {
     height: 80px;
-    width: 100%;
+    width: 535px;
     bottom: -75px;
     padding: 6px;
     box-sizing: border-box;
@@ -248,34 +206,11 @@ p {
     grid-area: footer;
     text-align: center;
     margin-top: 3rem;
-    padding-bottom: 2rem;
 }
 
 .footer p {
     font-size: 20px;
 }
-
-.footer img {
-    height: 50px;
-    width: 50px;
-    margin: 0 10px;
-    border-radius: 50%;
-    transition: transform 2s;
-  }
-  
-  .footer img:hover {
-    transform: scale(1.3);
-    background: linear-gradient(90deg, #FF008C, #FF8C00, #F9F871);
-    backdrop-filter: blur(10px);
-  }
-  
-  .footer img:not(:hover) {
-    transform: none;
-    border-radius: 50%;
-    background: none;
-    backdrop-filter: none;
-  }
-  
 
 /* Spinner animation */
 @keyframes spinner {
@@ -296,3 +231,7 @@ p {
         background-position: 0% 50%;
     }
 }
+
+
+
+
