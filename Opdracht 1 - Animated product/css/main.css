@@ -311,7 +311,10 @@ p {
         "card3"
         "footer";
     }
-    
+    body {
+        background-attachment: fixed;
+    }
+
     h1, h3 {
         text-align: center;
     }
@@ -354,12 +357,18 @@ p {
     
     .intro h3 {
       font-size: 2rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
     
     .intro p {
       font-size: 1.2rem;
       margin-top: 1rem;
+    }
+
+    .card__image img {
+        height: auto;
+        width: 100%;
+        margin-bottom: -1rem;
     }
 
     .card1 .intro,
@@ -372,9 +381,6 @@ p {
     .card2:hover .intro,
     .card3:hover .intro {
         display: block;
-        padding-top: 3rem;
+        padding-top: 2.5rem;
     }
-
-
   }
-
