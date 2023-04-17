@@ -1,0 +1,11 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+
+}
+
+h1 {
+    display: inline-block;
+}
+
