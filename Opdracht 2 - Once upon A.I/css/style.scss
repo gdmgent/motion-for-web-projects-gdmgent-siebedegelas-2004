@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,400;0,700;1,400&display=swap');
+
+$body-font: 'Pathway Extreme', sans-serif;
+$background-color: hsl(0, 0%, 27%);
+$body-font-main-color: hsl(0, 0%, 78%);
+
+
+* {
+    text-align: center;
+    margin: 0 auto;
+    background-color: $background-color;
+    font-family: $body-font;
+}
+
+@import "./nav";
+
+
+.title h1 {
+    font-size: 5rem;
+    color: $body-font-main-color;
+    position: relative;
+}
+
+h1 {
+       font-size: 3.5rem;
+       color: $body-font-main-color;
+       padding-top: 14rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: $body-font-main-color;
+    padding-bottom: 50vh;
+}
+
+
+p {
+    font-size: 1.5rem;
+    color: $body-font-main-color;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    padding-top: 6rem;
+    text-align: left;
+}
+
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+    }
+}
+
+
+
+// img {
+//     mask-image: url(../images/black\ bg.jpg);
+//     mask-type: alpha;
+//     mask-repeat: repeat-y;
+//     mask-size: 300% 100%;
+//     mask-position: left;
+//     -webkit-mask-image: url(../images/black\ bg.jpg);
+//     -webkit-mask-type: alpha;
+//     -webkit-mask-repeat: repeat-y;
+//     -webkit-mask-size: 300% 100%;
+//     -webkit-mask-position: left;
+// }
