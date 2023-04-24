@@ -1,13 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-<<<<<<< HEAD
-gsap.to(".square", {
-    x: 800,
-    y: 200,
-    duration: 6,
-    scrollTrigger: ".square"
-})
-=======
 
 let squares = document.querySelectorAll(".square");
 
@@ -24,7 +16,6 @@ squares.forEach(square => {
     y: 50,
   });
 });
->>>>>>> refs/remotes/origin/main
 
 
 
