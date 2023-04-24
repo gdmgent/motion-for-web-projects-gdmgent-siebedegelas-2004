@@ -8,12 +8,14 @@ $body-font-main-color: hsl(0, 0%, 78%);
 * {
     text-align: center;
     margin: 0 auto;
-    background-color: $background-color;
     font-family: $body-font;
 }
 
+body {
+    background-color: $background-color;
+}
 @import "./nav";
-
+@import "./section";
 
 .title h1 {
     font-size: 5rem;
@@ -21,14 +23,13 @@ $body-font-main-color: hsl(0, 0%, 78%);
     position: relative;
     z-index: 2;
     padding-bottom: 1.5rem;
-    background-color: $background-color;
 }
 
 h1 {
        font-size: 3.5rem;
        color: $body-font-main-color;
-       padding-top: 10rem;
-}
+       padding-top: 8rem;
+    }
 
 h2 {
     font-size: 2.5rem;
@@ -41,6 +42,10 @@ h2 {
     background-size: 25%;
 }
 
+section {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
 
 p {
     font-size: 1.5rem;
@@ -51,19 +56,6 @@ p {
     text-align: left;
 }
 
-main {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    section {
-        width: 100vw;
-        height: 100vh;
-        scroll-snap-align: start;
-        scroll-behavior: smooth;
-    }
-}
-
 .square {
     width: 150px;
     height: 150px;
@@ -71,19 +63,3 @@ main {
     position: relative;
     border-radius: 50%;
 }
-
-
-
-
-// img {
-//     mask-image: url(../images/black\ bg.jpg);
-//     mask-type: alpha;
-//     mask-repeat: repeat-y;
-//     mask-size: 300% 100%;
-//     mask-position: left;
-//     -webkit-mask-image: url(../images/black\ bg.jpg);
-//     -webkit-mask-type: alpha;
-//     -webkit-mask-repeat: repeat-y;
-//     -webkit-mask-size: 300% 100%;
-//     -webkit-mask-position: left;
-// }
