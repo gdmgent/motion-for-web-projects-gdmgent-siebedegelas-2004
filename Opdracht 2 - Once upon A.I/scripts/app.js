@@ -6,7 +6,7 @@ gsap.to(".square", {
     x: 800,
     y: 200,
     duration: 6,
-    // scrollTrigger: ".square"
+    scrollTrigger: ".square"
 })
 
 
