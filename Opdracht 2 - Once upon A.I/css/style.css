@@ -34,23 +34,24 @@ nav a:hover {
   position: relative;
   z-index: 2;
   padding-bottom: 1.5rem;
-  background-color: rgb(46, 46, 46);
+  background-color: hsl(0, 0%, 27%);
 }
 
 h1 {
   font-size: 3.5rem;
   color: hsl(0, 0%, 78%);
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 
 h2 {
   font-size: 2.5rem;
   color: hsl(0, 0%, 78%);
   padding-bottom: 60vh;
-  background-color: rgb(46, 46, 46);
+  background-color: hsl(0, 0%, 27%);
   background-image: url(../images/blind-man.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 25%;
 }
 
 p {
