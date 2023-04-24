@@ -18,6 +18,21 @@ squares.forEach(square => {
 });
 
 
+// let images = gsap.utils.toArray('.images');
+// images.forEach(image => {
+//     console.log(image);
+//   gsap.from(image, {
+//     scrollTrigger: {
+//       trigger: image,
+//       scroller: ".main",
+//       toggleActions: "play reverse play reset"
+//     },
+//     opacity: 0,
+//     x: 300,
+//     duration: 0.5
+//   });
+
+
 
 
 
