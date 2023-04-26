@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0 auto;
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: hsl(0, 0%, 27%);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+nav {
+  font-family: "Pathway Extreme", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 78%);
+  position: sticky;
+  z-index: 1;
+  top: 0.1px;
+  width: 100%;
+}
+nav a {
+  color: hsl(0, 0%, 14%);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 78%);
+}
+nav a:hover {
+  font-variation-settings: "wght" 800, "wdth" 600;
+  transition: ease-out 0.5s;
+}
+
+.text {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
+.text h1 {
+  font-size: 4rem;
+  color: hsl(0, 0%, 78%);
+  padding-top: 2rem;
+}
+
+.title h1 {
+  font-size: 5rem;
+  color: hsl(0, 0%, 78%);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 78%);
+  padding-top: 8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 78%);
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+section .image {
+  height: 10rem;
+  width: 10rem;
+  background-size: contain;
+}
+section .imgone {
+  background-image: url(../images/caea5caaecaa5c80c56292353be48abf79e98708_68645_packshot_open.webp);
+}
+section .imgtwo {
+  background-image: url(../images/b644232f670a5f54bbfb992f81589ff9.png);
+}
+section .imgthree {
+  background-image: url(../images/fear.jpg);
+}
+
+p {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 78%);
+  padding-right: 20rem;
+  padding-left: 20rem;
+  padding-top: 6rem;
+  text-align: left;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: hsl(0, 0%, 78%);
+  position: relative;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
