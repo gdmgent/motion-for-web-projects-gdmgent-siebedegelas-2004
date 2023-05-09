@@ -1,0 +1,17 @@
+
+#siebe {
+    color: yellow;
+    p {
+        height: 100vh;
+        &:first-of-type {
+            width: 20vw;
+            padding: 2rem;
+        }
+    }  
+    h1 {
+        font-family: Sacramento;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}

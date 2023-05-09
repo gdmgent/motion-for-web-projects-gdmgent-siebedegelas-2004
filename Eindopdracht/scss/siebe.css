@@ -1,0 +1,16 @@
+#siebe {
+  color: yellow;
+}
+#siebe p {
+  height: 100vh;
+}
+#siebe p:first-of-type {
+  width: 20vw;
+  padding: 2rem;
+}
+#siebe h1 {
+  font-family: Sacramento;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}/*# sourceMappingURL=siebe.css.map */
