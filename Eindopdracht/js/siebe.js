@@ -10,7 +10,7 @@ function siebe(fase) {
         .add('start')
         .to("#siebe .box", { 
                 borderRadius: "50%" ,
-                backgroundColor: "blue",
+                backgroundColor: "var(--lavenderPink)",
                 rotation: 360,
                 left: '30vw',
                 top: 'calc(50vh - 20vw)',
@@ -20,7 +20,7 @@ function siebe(fase) {
         .add('deel1')
         .to("#siebe .box", { 
                 borderRadius: "0" ,
-                backgroundColor: "red",
+                backgroundColor: "var(--dogwoodRose)",
                 rotation: 360,
                 left: '30vw',
                 top: 'calc(50vh - 20vw)',

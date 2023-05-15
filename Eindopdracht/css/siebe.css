@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap");
+:root {
+  --englishViolet: hsl(298, 16%, 33%);
+  --russianViolet: hsl(269, 49%, 19%);
+  --dogwoodRose: hsl(338, 62%, 48%);
+  --lavenderPink: hsl(334, 85%, 84%);
+}
+
 #siebe {
   /*
   * Delen
@@ -19,7 +26,7 @@
 #siebe .deel1 {
   width: 100%;
   height: 100vh;
-  color: yellow;
+  color: var(--dogwoodRose);
 }
 #siebe .deel1 p {
   height: 100vh;
@@ -31,10 +38,10 @@
 #siebe .deel2 {
   width: 100%;
   height: 100vh;
-  color: purple;
+  color: --englishViolet;
 }
 #siebe .reset {
-  color: red;
+  color: hsl(298, 16%, 33%);
   font-size: 8rem;
   text-align: center;
 }/*# sourceMappingURL=siebe.css.map */
