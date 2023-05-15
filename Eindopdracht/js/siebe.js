@@ -19,7 +19,7 @@ function siebe(fase) {
             }, 'start')
         .add('deel1')
         .to("#siebe .box", { 
-                borderRadius: "50%" ,
+                borderRadius: "0" ,
                 backgroundColor: "red",
                 rotation: 360,
                 left: '30vw',
@@ -41,7 +41,7 @@ function siebe(fase) {
             rotateZ: 45,
         }, 'deel2') 
 
-        
+
         .add('reset')
         .to("#siebe .box", { 
             borderRadius: "0" ,
