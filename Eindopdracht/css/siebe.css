@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap");
 #siebe {
   color: yellow;
+}
+#siebe p {
+  font-family: "Oswald", sans-serif;
 }
 #siebe p {
   height: 100vh;
@@ -9,12 +13,13 @@
   padding: 2rem;
 }
 #siebe h1 {
-  font-family: Sacramento;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
 }
-
-.deel2 {
+#siebe .deel2 {
   color: purple;
+}
+#siebe .reset {
+  color: red;
 }/*# sourceMappingURL=siebe.css.map */
