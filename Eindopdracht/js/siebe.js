@@ -7,6 +7,7 @@ function siebe(fase) {
         // eigen animatie schrijven
         console.log("siebe.js: init");
         section.tl
+        .add('start')
         .to("#siebe .box", { 
                 borderRadius: "50%" ,
                 backgroundColor: "blue",
@@ -15,8 +16,7 @@ function siebe(fase) {
                 top: 'calc(50vh - 20vw)',
                 width: '40vw',
                 height: '40vw',
-                duration: 1,
-            })
+            }, 'start')
         .add('deel1')
         .to("#siebe .box", { 
                 borderRadius: "50%" ,
@@ -26,24 +26,35 @@ function siebe(fase) {
                 top: 'calc(50vh - 20vw)',
                 width: '40vw',
                 height: '40vw',
-                duration: 5,
             }, 'deel1')
             .from("#siebe p:first-of-type", {
                 opacity: 0,
-                duration: 1,
                 x: -300,
             }, 'deel1')
 
-            .to("#siebe .box", { 
-                borderRadius: "0" ,
-                backgroundColor: "white",
-                rotation: 360,
-                left: '40vw',
-                top: 'calc(50vh - 10vw)',
-                width: '20vw',
-                height: '20vw',
-                duration: 1,
-            });
+        .add('deel2')
+        .to("#siebe .box", {
+            width: '20vw', 
+            height: '20vw',
+            rotateX: 45,    
+            rotateY: 45,
+            rotateZ: 45,
+        }, 'deel2') 
+
+        
+        .add('reset')
+        .to("#siebe .box", { 
+            borderRadius: "0" ,
+            backgroundColor: "white",
+            rotateX: 0,
+            rotateY: 0,
+            rotateZ: 0,
+            width: '20vw',
+            height: '20vw',
+            left: '40vw',
+            top: 'calc(50vh - 10vw)',
+        }, 'reset')
+        
     }
 
 
