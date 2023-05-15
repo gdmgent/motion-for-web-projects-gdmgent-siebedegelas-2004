@@ -37,7 +37,7 @@ function siebe(fase) {
 
         .add('deel2')
         .to("#siebe .box", {
-            backgroundColor: "#c62f66",
+            backgroundColor: "#7d98a1",
             width: '20vw', 
             height: '20vw',
             borderRadius: "0",
