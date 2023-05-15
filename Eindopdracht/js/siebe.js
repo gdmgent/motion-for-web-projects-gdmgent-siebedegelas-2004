@@ -10,7 +10,7 @@ function siebe(fase) {
         .add('start')
         .to("#siebe .box", { 
                 borderRadius: "50%" ,
-                backgroundColor: "var(--lavenderPink)",
+                backgroundColor: "#c62f66",
                 rotation: 360,
                 left: '30vw',
                 top: 'calc(50vh - 20vw)',
@@ -20,13 +20,16 @@ function siebe(fase) {
         .add('deel1')
         .to("#siebe .box", { 
                 borderRadius: "0" ,
-                backgroundColor: "var(--dogwoodRose)",
-                rotation: 360,
+                backgroundColor: "#c62f66",
+                rotation: 180,
                 left: '30vw',
                 top: 'calc(50vh - 20vw)',
                 width: '40vw',
                 height: '40vw',
             }, 'deel1')
+            .to("#siebe .box", {
+                borderRadius: "180" 
+            }, 'deel1') 
             .from("#siebe p:first-of-type", {
                 opacity: 0,
                 x: -300,
@@ -34,8 +37,10 @@ function siebe(fase) {
 
         .add('deel2')
         .to("#siebe .box", {
+            backgroundColor: "#c62f66",
             width: '20vw', 
             height: '20vw',
+            borderRadius: "0",
             rotateX: 45,    
             rotateY: 45,
             rotateZ: 45,
@@ -45,7 +50,7 @@ function siebe(fase) {
         .add('reset')
         .to("#siebe .box", { 
             borderRadius: "0" ,
-            backgroundColor: "white",
+            backgroundColor: "#ffffff",
             rotateX: 0,
             rotateY: 0,
             rotateZ: 0,

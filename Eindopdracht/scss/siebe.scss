@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
 
 :root {
-    --englishViolet: hsl(298, 16%, 33%);
-    --russianViolet: hsl(269, 49%, 19%);
-    --dogwoodRose: hsl(338, 62%, 48%);
-    --lavenderPink: hsl(334, 85%, 84%);
+    --englishViolet: #614762;
+    --russianViolet: #301948
+    --dogwoodRose: #c62f66
+    --lavenderPink: #F9B4D2;
+    --oldRose: #c98787;
+    --cadetGray: #7d98a1;
 }
 
 #siebe {
@@ -58,7 +60,7 @@
 
     .reset {
         color: hsl(298, 16%, 33%);
-        font-size: 8rem;
+        font-size: 7rem;
         text-align: center;
     }
 
