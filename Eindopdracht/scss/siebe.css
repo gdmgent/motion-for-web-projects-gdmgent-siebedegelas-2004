@@ -6,6 +6,9 @@
   --lavenderPink: #F9B4D2;
   --oldRose: #c98787;
   --cadetGray: #7d98a1;
+  --buff: #DDA77B;
+  --wenge: #63595C;
+  --outerSpace: #404E4D;
 }
 
 #siebe {
@@ -24,9 +27,9 @@
   left: 0;
   background: #000 url(../images/math.jpg) no-repeat;
   background-size: 100% 100%;
-  background-position: 0% 0%;
-  opacity: 1;
+  opacity: 0.5;
   z-index: -200;
+  filter: blur(5px) brightness(1.2) contrast(1.2);
 }
 #siebe p {
   font-family: "Oswald", sans-serif;
@@ -43,7 +46,6 @@
   position: relative;
   display: block;
   text-align: center;
-  width: 100vw;
   padding: 10vh 10vw;
   font-size: 6rem;
   line-height: 5rem;
