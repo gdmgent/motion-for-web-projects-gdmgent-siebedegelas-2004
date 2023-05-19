@@ -26,6 +26,12 @@
   max-width: 30vw;
   z-index: 2;
 }
+#siebe .mainText span {
+  color: var(--cadetGray);
+}
+#siebe .mainText span.light {
+  color: var(--buff);
+}
 #siebe .bg {
   position: absolute;
   width: 100%;

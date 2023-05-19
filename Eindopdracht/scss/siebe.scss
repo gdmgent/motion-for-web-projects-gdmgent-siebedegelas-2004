@@ -23,6 +23,12 @@
         border-radius: 5px;
         max-width: 30vw;
         z-index: 2;
+        span {
+            color: var(--cadetGray);
+        }
+        span.light {
+            color: var(--buff);
+        }
     }
 
     .bg {
