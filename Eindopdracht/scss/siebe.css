@@ -15,9 +15,6 @@
   /*
   * Delen
   */
-  /*
-  * Reset
-  */
 }
 #siebe .mainText {
   color: #f0e6d2;
@@ -68,24 +65,19 @@
   display: block;
   font-size: 3rem;
 }
-#siebe .deel1 {
+#siebe .cirkel1 {
   width: 100%;
   height: 100vh;
   color: var(--dogwoodRose);
 }
-#siebe .deel1 p:first-of-type {
+#siebe .cirkel1 p:first-of-type {
   width: 40vw;
   padding: 2rem;
   margin-top: 20rem;
   margin-left: 5rem;
 }
-#siebe .deel2 {
+#siebe .cirkel2 {
   width: 100%;
   height: 100vh;
   color: --englishViolet;
-}
-#siebe .reset {
-  color: hsl(298, 16%, 33%);
-  font-size: 7rem;
-  text-align: center;
 }/*# sourceMappingURL=siebe.css.map */

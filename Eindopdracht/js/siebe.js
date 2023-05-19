@@ -17,7 +17,7 @@ function siebe(fase) {
                 width: '40vw',
                 height: '40vw',
             }, 'start')
-        .add('deel1')
+        .add('cirkel1')
         .to("#siebe .box", { 
                 borderRadius: "0" ,
                 backgroundColor: "#63595C",
@@ -26,16 +26,16 @@ function siebe(fase) {
                 top: 'calc(50vh - 20vw)',
                 width: '40vw',
                 height: '40vw',
-            }, 'deel1')
+            }, 'cirkel1')
             .to("#siebe .box", {
                 borderRadius: "180" 
-            }, 'deel1') 
+            }, 'cirkel1') 
             .from("#siebe p:first-of-type", {
                 opacity: 0,
                 x: -300,
-            }, 'deel1')
+            }, 'cirkel1')
 
-        .add('deel2')
+        .add('cirkel2')
         .to("#siebe .box", {
             backgroundColor: "#7d98a1",
             width: '20vw', 
@@ -44,7 +44,7 @@ function siebe(fase) {
             rotateX: 45,    
             rotateY: 45,
             rotateZ: 45,
-        }, 'deel2') 
+        }, 'cirkel2') 
 
 
         .add('reset')
