@@ -10,12 +10,17 @@
 }
 
 #siebe {
-    
-
-    // .bg {
-    //     background-color: #c55555;
-    //     z-index: -200;
-    // }
+    .bg {
+        position: absolute;
+        width: 100%; height: 100%;
+        top:0;
+        left:0;
+        background: #000 url(../images/math.jpg) no-repeat;
+        background-size: 100% 100%;
+        background-position: 0% 0%;
+        opacity: 1;
+        z-index: -200;
+    }
 
     p {
     font-family: 'Oswald', sans-serif;
@@ -28,6 +33,25 @@
         text-align: center;
     }
 
+    div.info {
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 100vw;
+        padding: 10vh 10vw;
+        font-size: 6rem;
+        line-height: 5rem;
+        height: 100vh;
+        z-index: 0;
+        color: var(--cadetGray);
+        mix-blend-mode: exclusion;
+        small {
+            display: block;
+            font-size: 3rem;
+        }
+    }
 
 
 /*
