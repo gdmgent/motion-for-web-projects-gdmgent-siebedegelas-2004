@@ -19,6 +19,16 @@
   * Reset
   */
 }
+#siebe .mainText {
+  color: #f0e6d2;
+  font-size: 1.7rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.462745098);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 30vw;
+  z-index: 2;
+}
 #siebe .bg {
   position: absolute;
   width: 100%;
@@ -63,12 +73,11 @@
   height: 100vh;
   color: var(--dogwoodRose);
 }
-#siebe .deel1 p {
-  height: 100vh;
-}
 #siebe .deel1 p:first-of-type {
-  width: 20vw;
+  width: 40vw;
   padding: 2rem;
+  margin-top: 20rem;
+  margin-left: 5rem;
 }
 #siebe .deel2 {
   width: 100%;
