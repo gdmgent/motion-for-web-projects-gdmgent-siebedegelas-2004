@@ -141,7 +141,19 @@
         top: 50vw;
         }
 
-
+        #siebe .box.illuminati {
+            width: 0;
+            height: 0;
+            border-left: 20vw solid transparent;
+            border-right: 20vw solid transparent;
+            border-bottom: 40vw solid var(--wenge);
+            transform: rotate(180deg);
+            left: 30vw;
+            top: calc(50vh - 20vw);
+            border-radius: 0;
+            background-color: var(--wenge);
+          }
+          
 
     }
     

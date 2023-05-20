@@ -1,3 +1,5 @@
+const { TweenLite } = require("gsap/gsap-core");
+
 function siebe(fase) {
     console.log('siebe.js: fase = ' + fase);
     let section = document.getElementById('siebe');
@@ -128,10 +130,10 @@ function siebe(fase) {
                 x: '10vw',
             }, 'cirkel2')
             .to("#siebe .box", {
-                backgroundColor: "#614762",
+                backgroundColor: "#ff9a47",
             }, 'cirkel2')
             .to("#siebe .box", {
-                backgroundColor: "#614762",
+                backgroundColor: "#314b33",
                 width: '40vw',
                 height: '40vw',
                 borderRadius: "0",
@@ -144,14 +146,14 @@ function siebe(fase) {
                 opacity: 0,
                 x: -300,
             }, 'cirkel2')
-            .add('rechthoek') 
+            .add('illuminati') 
             .to ("#siebe .box", {
-                backgroundColor: "#614762",
-                width: '200vw',
-                height: '30vw',
+                backgroundColor: "#314b33",
+                width: '40vw',
+                height: '40vw',
                 borderRadius: "0",
-            } , 'box')
-         /* 
+            } , 'illuminati')
+            /* 
          ** Reset 
          */      
             .add('reset')
