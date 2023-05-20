@@ -7,6 +7,9 @@ function siebe(fase) {
         // eigen animatie schrijven
         console.log("siebe.js: init");
         section.tl
+         /* 
+         ** Start
+         */
             .add('start')
             .to("#siebe .box", {
                 borderRadius: "50%" ,
@@ -17,6 +20,9 @@ function siebe(fase) {
                 width: '40vw',
                 height: '40vw',
             }, 'start')
+         /* 
+         ** Cirkel 1
+         */
             .add('cirkel1')
             .to("#siebe .box", {
                 borderRadius: "50%" ,
@@ -49,7 +55,9 @@ function siebe(fase) {
                 //     document.querySelector('#siebe .box').appendChild(image);
                 // },
             }, 'cirkel1+=0.5')
-
+         /* 
+         ** Reset image
+         */
             .add('reset-img')
             .to("#siebe .box", {
                 backgroundColor: "red",
@@ -58,9 +66,9 @@ function siebe(fase) {
                 borderRadius: "0",
                 rotateX: 45,
                 rotateY: 45,
-                rotateZ: 45,
+                rotateZ: 50,
                 x: '40vw',
-            // }, 'reset-img')
+                            // }, 'reset-img')
             // .to(".cirkel-image", {
             //     opacity: 0,
             //     onComplete: function () {
@@ -70,9 +78,14 @@ function siebe(fase) {
             //         }
             //     },
             }, 'reset-img')
+         /* 
+         ** Diamond poker 
+         */
             .add('diamond')
-
-
+            .to("#siebe #info-poker", {
+                opacity: 0,
+                x: -500,
+            }, 'diamond')
             .to("#siebe #harten", { 
                 opacity: 1, 
                 y: -600,
@@ -89,16 +102,20 @@ function siebe(fase) {
             }, "diamond+=0.2")
             .to("#siebe #klavers", { 
                 opacity: 1, 
-                y: -600,
-                x: 200,
+                y: -900,
+                x: 900,
                 rotateZ: 5,
                 ease: "power2.easeIn" 
             }, "diamond+=0.4")
-            
-            
-
-
-
+            .to("#siebe #box", {
+                opacity: 0,
+                y: -500,
+                x: -500,
+                ease: "power2.easeIn" 
+            }, "diamond+=0.6")
+         /* 
+         ** Cirkel 2 
+         */
             .add('cirkel2')
             .to("#siebe .box", {
                 backgroundColor: "#7d98a1",
@@ -108,30 +125,35 @@ function siebe(fase) {
                 rotateX: 45,
                 rotateY: 45,
                 rotateZ: 45,
-                x: '20vw',
+                x: '10vw',
             }, 'cirkel2')
             .to("#siebe .box", {
-                backgroundColor: "#35654d",
+                backgroundColor: "#614762",
+            }, 'cirkel2')
+            .to("#siebe .box", {
+                backgroundColor: "#614762",
                 width: '40vw',
                 height: '40vw',
-                borderRadius: "50%",
+                borderRadius: "0",
                 rotateX: 180,
                 rotateY: 180,
                 rotateZ: 180,
-                x: '0vw',
-            }, 'cirkel2')
-            .to("#siebe .box", {
                 x: '0vw',
             }, 'cirkel2')
             .from("#siebe p:first-of-type", {
                 opacity: 0,
                 x: -300,
             }, 'cirkel2')
-
-
-
-
-            // Reset      
+            .add('rechthoek') 
+            .to ("#siebe .box", {
+                backgroundColor: "#614762",
+                width: '200vw',
+                height: '30vw',
+                borderRadius: "0",
+            } , 'box')
+         /* 
+         ** Reset 
+         */      
             .add('reset')
             .to("#siebe .box", {
                 borderRadius: "0" ,
