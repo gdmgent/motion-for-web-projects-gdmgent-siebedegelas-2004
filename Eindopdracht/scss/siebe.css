@@ -16,22 +16,6 @@
   * Delen
   */
 }
-#siebe .mainText {
-  color: #f0e6d2;
-  font-size: 1.7rem;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.462745098);
-  padding: 10px;
-  border-radius: 5px;
-  max-width: 30vw;
-  z-index: 2;
-}
-#siebe .mainText span {
-  color: var(--cadetGray);
-}
-#siebe .mainText span.light {
-  color: var(--buff);
-}
 #siebe .bg {
   position: absolute;
   width: 100%;
@@ -43,6 +27,22 @@
   opacity: 0.5;
   z-index: -200;
   filter: blur(5px) brightness(1.2) contrast(1.2);
+}
+#siebe .infoText {
+  color: #f0e6d2;
+  font-size: 1.75rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.462745098);
+  padding: 0.75rem;
+  border-radius: 2%;
+  max-width: 30vw;
+  z-index: 2;
+}
+#siebe .infoText span {
+  color: var(--cadetGray);
+}
+#siebe .infoText span.light {
+  color: var(--buff);
 }
 #siebe p {
   font-family: "Oswald", sans-serif;
@@ -65,11 +65,35 @@
   height: 100vh;
   z-index: 0;
   color: var(--cadetGray);
+  filter: drop-shadow(0 8px 4px rgba(22, 62, 58, 0.8));
   mix-blend-mode: exclusion;
 }
 #siebe div.info small {
   display: block;
   font-size: 3rem;
+}
+#siebe .info-poker {
+  color: var(--buff);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 10vh 10vw;
+  font-size: 6rem;
+  line-height: 5rem;
+  height: 100vh;
+  z-index: 0;
+  color: var(--cadetGray);
+}
+#siebe .info-poker span.luck {
+  color: #467e62;
 }
 #siebe .cirkel1 {
   width: 100%;
@@ -79,11 +103,20 @@
 #siebe .cirkel1 p:first-of-type {
   width: 40vw;
   padding: 2rem;
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-left: 5rem;
 }
 #siebe .cirkel2 {
   width: 100%;
   height: 100vh;
   color: --englishViolet;
+}
+#siebe #schoppen {
+  opacity: 0;
+}
+#siebe #harten {
+  opacity: 0;
+}
+#siebe #klavers {
+  opacity: 0;
 }/*# sourceMappingURL=siebe.css.map */
