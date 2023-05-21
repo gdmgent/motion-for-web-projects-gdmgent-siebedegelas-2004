@@ -153,9 +153,8 @@ function siebe(fase) {
                 x: -300,
             }, 'cirkel2')
             .add('illuminati') 
-            .from("#illuminati p:first-of-type", {
-                opacity: 1,
-                x: -800,
+            .from("#text-illuminati", {
+                x: -400,
             }, 'illumnati')
             .to("#siebe #illuminati-img", { 
                 opacity: 1, 
@@ -163,7 +162,6 @@ function siebe(fase) {
                 y: -200,
                 ease: "power2.easeIn" 
             }, "illuminati-img")
-
             .to ("#siebe .box", {
                 backgroundColor: "#2b3628",
                 width: '10vw',
@@ -179,7 +177,7 @@ function siebe(fase) {
             .add('reset')
             .to("#siebe .box", {
                 borderRadius: "0" ,
-                backgroundColor: 'green',   
+                backgroundColor: 'white',   
                 rotateX: 0,
                 rotateY: 0,
                 rotateZ: 0,

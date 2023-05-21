@@ -80,7 +80,7 @@
         font-size: 2rem;
         font-weight: 700;
         text-align: center;
-        margin-top: 30vw;
+        margin-top: 5vw;
         margin-left: 5rem;
         margin-right: 5rem;
         text-transform: uppercase;
@@ -137,7 +137,7 @@
         top: 50vw;
         }
 
-    #illuminati {
+    #text-illuminati {
         text-transform: uppercase;
         font-weight: 700;
         position: relative;
@@ -148,12 +148,10 @@
         line-height: 5rem;
         height: 100vh;
         z-index: 0;
+        text-align: right;
         color: hsl(125, 21%, 24%);
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-        &.text-illuminati {
-            text-align: right;
-        }
-        }
+
        
     .text-illuminati {
         text-align: right;
@@ -169,3 +167,4 @@
 
 
 
+}
