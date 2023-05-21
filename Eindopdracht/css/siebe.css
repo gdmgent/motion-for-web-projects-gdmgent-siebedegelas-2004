@@ -9,7 +9,6 @@
   --buff: #DDA77B;
   --wenge: #63595C;
   --outerSpace: #404E4D;
-  --black: #000000;
 }
 
 #siebe {
@@ -42,8 +41,8 @@
 #siebe .infoText span {
   color: var(--cadetGray);
 }
-#siebe .infoText span.light {
-  color: var(--buff);
+#siebe .infoText span.red {
+  color: rgb(255, 39, 39);
 }
 #siebe p {
   font-family: "Oswald", sans-serif;
@@ -93,7 +92,7 @@
   z-index: 0;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
-#siebe #info-poker span.luck {
+#siebe #info-poker span.red {
   color: rgb(255, 39, 39);
 }
 #siebe .cirkel1 {

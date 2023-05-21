@@ -1,4 +1,5 @@
-const { TweenLite } = require("gsap/gsap-core");
+const { gsap } = window;
+
 
 function siebe(fase) {
     console.log('siebe.js: fase = ' + fase);
@@ -6,22 +7,32 @@ function siebe(fase) {
 
     if (!section.init) {
         section.init = true;
-        // eigen animatie schrijven
+        // Eigen animatie schrijven
         console.log("siebe.js: init");
         section.tl
          /* 
          ** Start
          */
             .add('start')
+            .from("#siebe p:first-of-type", {
+                opacity: 0,
+                x: -300,    
+            }, 'start')
             .to("#siebe .box", {
-                borderRadius: "50%" ,
+                borderRadius: "50%",
                 backgroundColor: "#404E4D",
                 rotation: 360,
                 left: '30vw',
                 top: 'calc(50vh - 20vw)',
                 width: '40vw',
                 height: '40vw',
-            }, 'start')
+                onComplete: function () {
+                  var image = document.createElement('img');
+                  image.src = './images/cirkel.png';
+                  image.classList.add('cirkel-image');
+                  document.querySelector('#siebe .box').appendChild(image);
+                },
+              }, 'start+=0.5')
          /* 
          ** Cirkel 1
          */
@@ -38,10 +49,7 @@ function siebe(fase) {
             .to("#siebe .box", {
                 borderRadius: "180"
             }, 'cirkel1')
-            .from("#siebe p:first-of-type", {
-                opacity: 0,
-                x: -300,
-            }, 'cirkel1')
+    
             .to("#siebe .box", {
                 backgroundColor: "#7d98a1",
                 width: '20vw',
@@ -50,12 +58,15 @@ function siebe(fase) {
                 rotateX: 45,
                 rotateY: 45,
                 rotateZ: 45,
-                // onComplete: function () {
-                //     var image = document.createElement('img');
-                //     image.src = './images/cirkel.png';
-                //     image.classList.add('cirkel-image');
-                //     document.querySelector('#siebe .box').appendChild(image);
-                // },
+            }, 'reset-img')
+            .to(".cirkel-image", {
+                opacity: 0,
+                    onComplete: function () {
+                    var image = document.querySelector('.cirkel-image');
+                    if (image) {
+                        image.parentNode.removeChild(image);
+                    }
+                },
             }, 'cirkel1+=0.5')
          /* 
          ** Reset image
@@ -70,15 +81,6 @@ function siebe(fase) {
                 rotateY: 45,
                 rotateZ: 50,
                 x: '40vw',
-                            // }, 'reset-img')
-            // .to(".cirkel-image", {
-            //     opacity: 0,
-            //     onComplete: function () {
-            //         var image = document.querySelector('.cirkel-image');
-            //         if (image) {
-            //             image.parentNode.removeChild(image);
-            //         }
-            //     },
             }, 'reset-img')
          /* 
          ** Diamond poker 
@@ -159,7 +161,7 @@ function siebe(fase) {
             .add('reset')
             .to("#siebe .box", {
                 borderRadius: "0" ,
-                backgroundColor: "#ffffff",
+                backgroundColor: 'green',   
                 rotateX: 0,
                 rotateY: 0,
                 rotateZ: 0,
