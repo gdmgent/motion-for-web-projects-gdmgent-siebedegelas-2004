@@ -107,7 +107,7 @@ function siebe(fase) {
             .to("#siebe #klavers", { 
                 opacity: 1, 
                 y: -900,
-                x: 900,
+                x: 800,
                 rotateZ: 5,
                 ease: "power2.easeIn" 
             }, "diamond+=0.4")
@@ -132,29 +132,47 @@ function siebe(fase) {
                 x: '10vw',
             }, 'cirkel2')
             .to("#siebe .box", {
-                backgroundColor: "#ff9a47",
+                backgroundColor: "#7d98a1",
             }, 'cirkel2')
             .to("#siebe .box", {
-                backgroundColor: "#314b33",
+                backgroundColor: "#2b3628",
                 width: '40vw',
                 height: '40vw',
                 borderRadius: "0",
                 rotateX: 180,
                 rotateY: 180,
                 rotateZ: 180,
-                x: '0vw',
+                y: '10vw',
+                opacity: 0,
+                backgroundColor: "#2b3628",
+                width: '10vw',
+                height: '10vw',
             }, 'cirkel2')
             .from("#siebe p:first-of-type", {
                 opacity: 0,
                 x: -300,
             }, 'cirkel2')
             .add('illuminati') 
+            .from("#illuminati p:first-of-type", {
+                opacity: 1,
+                x: -800,
+            }, 'illumnati')
+            .to("#siebe #illuminati-img", { 
+                opacity: 1, 
+                rotateZ: 5,
+                y: -200,
+                ease: "power2.easeIn" 
+            }, "illuminati-img")
+
             .to ("#siebe .box", {
-                backgroundColor: "#314b33",
-                width: '40vw',
-                height: '40vw',
+                backgroundColor: "#2b3628",
+                width: '10vw',
+                height: '10vw',
                 borderRadius: "0",
-            } , 'illuminati')
+                opacity: 1,
+            } , 'box')
+
+
             /* 
          ** Reset 
          */      
@@ -167,6 +185,8 @@ function siebe(fase) {
                 rotateZ: 0,
                 width: '20vw',
                 height: '20vw',
+                y: '0vw',
+                x: '0vw',
                 left: '40vw',
                 top: 'calc(50vh - 10vw)',
             }, 'reset');

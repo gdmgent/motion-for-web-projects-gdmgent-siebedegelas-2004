@@ -34,15 +34,15 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.462745098);
   padding: 0.75rem;
-  border-radius: 2%;
+  border-radius: 5%;
   max-width: 30vw;
   z-index: 2;
 }
 #siebe .infoText span {
   color: var(--cadetGray);
 }
-#siebe .infoText span.light {
-  color: var(--buff);
+#siebe .infoText span.red {
+  color: rgb(255, 39, 39);
 }
 #siebe p {
   font-family: "Oswald", sans-serif;
@@ -77,7 +77,7 @@
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 30vw;
   margin-left: 5rem;
   margin-right: 5rem;
   text-transform: uppercase;
@@ -92,7 +92,7 @@
   z-index: 0;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
-#siebe #info-poker span.luck {
+#siebe #info-poker span.red {
   color: rgb(255, 39, 39);
 }
 #siebe .cirkel1 {
@@ -123,15 +123,27 @@
   opacity: 0;
   top: 50vw;
 }
-#siebe #siebe .box.illuminati {
-  width: 0;
-  height: 0;
-  border-left: 20vw solid transparent;
-  border-right: 20vw solid transparent;
-  border-bottom: 40vw solid var(--wenge);
-  transform: rotate(180deg);
-  left: 30vw;
-  top: calc(50vh - 20vw);
-  border-radius: 0;
-  background-color: var(--wenge);
+#siebe #illuminati {
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 10vh 10vw;
+  font-size: 6.5rem;
+  line-height: 5rem;
+  height: 100vh;
+  z-index: 0;
+  color: hsl(125, 21%, 24%);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+#siebe #illuminati.text-illuminati {
+  text-align: right;
+}
+#siebe .text-illuminati {
+  text-align: right;
+}
+#siebe #illuminati-img {
+  opacity: 0;
+  top: 50vw;
 }/*# sourceMappingURL=siebe.css.map */
