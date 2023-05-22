@@ -104,15 +104,21 @@
         position: fixed;
         // top: 20vw;
         // left: 11vw;
-        top: 0;
-        left: 0;
+        top: -25vw;
+        left: -25vw;
         margin: 0 auto;
         animation: rotate 10s linear infinite;
         // rotate: 100deg;
-        width: 100vw;
-        height: 100vh;
+        width: 150vw;
+        height: 150vh;
         transform-origin: center center;
         opacity: 0;
+    }
+    
+    .koningin {
+        width: 20vw;
+        height: 100%;
+        margin: 0 auto;
     }
     
 

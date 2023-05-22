@@ -10,13 +10,13 @@ function siebe(fase) {
         // Eigen animatie schrijven
         console.log("siebe.js: init");
         section.tl
-         /* 
+         /*
          ** Start
          */
             .add('start')
             .from("#siebe p:first-of-type", {
                 opacity: 0,
-                x: -300,    
+                x: -300,
             }, 'start')
             .from("#siebe #measurments", {
                 opacity: 0,
@@ -38,8 +38,8 @@ function siebe(fase) {
             //     },
               }, 'start+=0.5')
 
-              
-         /* 
+
+         /*
          ** Cirkel 1
          */
             .add('cirkel1')
@@ -58,7 +58,7 @@ function siebe(fase) {
             .to("#siebe .box", {
                 borderRadius: "180"
             }, 'cirkel1')
-    
+
             .to("#siebe .box", {
                 backgroundColor: "#7d98a1",
                 width: '20vw',
@@ -70,7 +70,7 @@ function siebe(fase) {
             }, 'reset-img')
             .to("#siebe #measurments", {
                 opacity: 0,
-            }, 'reset-img+=0.5')	
+            }, 'reset-img+=0.5')
             // .to(".cirkel-image", {
             //     opacity: 0,
             //         onComplete: function () {
@@ -80,7 +80,7 @@ function siebe(fase) {
             //         }
             //     },
             // }, 'cirkel1+=0.5')
-         /* 
+         /*
          ** Reset image
          */
             .add('reset-img')
@@ -94,57 +94,72 @@ function siebe(fase) {
                 rotateZ: 50,
                 x: '40vw',
             }, 'reset-img')
-         /* 
-         ** Diamond poker 
+         /*
+         ** Diamond poker
          */
             .add('diamond')
             .to("#siebe #info-poker", {
                 opacity: 0,
                 x: -500,
             }, 'diamond')
-            .to("#siebe #harten", { 
-                opacity: 1, 
+            .to("#siebe #harten", {
+                opacity: 1,
                 y: -600,
                 x: 200,
                 rotateZ: -5,
-                ease: "power2.easeIn" 
+                ease: "power2.easeIn"
             }, "diamond")
-            .to("#siebe #schoppen", { 
-                opacity: 1, 
+            .to("#siebe #schoppen", {
+                opacity: 1,
                 y: -400,
                 x: 500,
                 rotateZ: 5,
-                ease: "power2.easeIn" 
+                ease: "power2.easeIn"
             }, "diamond+=0.2")
-            .to("#siebe #klavers", { 
-                opacity: 1, 
+            .to("#siebe #klavers", {
+                opacity: 1,
                 y: -900,
                 x: 800,
                 rotateZ: 5,
-                ease: "power2.easeIn" 
+                ease: "power2.easeIn"
             }, "diamond+=0.4")
             .to("#siebe #box", {
                 opacity: 0,
                 y: -500,
                 x: -500,
-                ease: "power2.easeIn" 
+                ease: "power2.easeIn"
             }, "diamond")
-         /* 
-         ** Cards 
+         /*
+         ** Cards
          */
             .add('cards')
             .to("#siebe .cards", {
                 opacity: 1,
             }, 'cards')
-         /* 
-         ** Chill 
+            .to("#siebe .koningin", {
+                opacity: 1,
+                y: -300,
+            }, 'cards')
+            .to("#siebe .box", {
+                backgroundColor: "#ff5555",
+                width: '10vw',
+                height: '10vw',
+                borderRadius: "5%",
+                rotateX: 45,
+                rotateY: 45,
+                rotateZ: 55,
+                x: '10vw',
+                y: '10vw',
+            }, 'cards')
+         /*
+         ** Chill
          */
             .add('chill')
             .to("#siebe .chill", {
                 opacity: 0,
             }, 'chill')
-         /* 
-         ** Cirkel 2 
+         /*
+         ** Cirkel 2
          */
             .add('cirkel2')
             .to("#siebe .box", {
@@ -178,22 +193,22 @@ function siebe(fase) {
                 opacity: 0,
                 x: -300,
             }, 'cirkel2')
-            .add('illuminati') 
+            .add('illuminati')
             .from("#text-illuminati", {
                 x: -400,
             }, 'illumnati')
-            .to("#siebe #illuminati-img", { 
-                opacity: 1, 
+            .to("#siebe #illuminati-img", {
+                opacity: 1,
                 rotateZ: 5,
                 y: -200,
-                ease: "power2.easeIn" 
+                ease: "power2.easeIn"
             }, "illuminati-img")
             .to ("#siebe .box", {
                 backgroundColor: "#2b3628",
                 width: '10vw',
                 height: '10vw',
                 borderRadius: "0",
-                opacity: 1,
+                opacity: 0,
             } , 'box')
             .to("#siebe .cards", {
                 opacity: 0,
@@ -201,13 +216,13 @@ function siebe(fase) {
             }, 'illuminati')
 
 
-            /* 
-         ** Reset 
-         */      
+            /*
+         ** Reset
+         */
             .add('reset')
             .to("#siebe .box", {
                 borderRadius: "0" ,
-                backgroundColor: 'white',   
+                backgroundColor: 'white',
                 rotateX: 0,
                 rotateY: 0,
                 rotateZ: 0,

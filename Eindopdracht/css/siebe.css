@@ -98,14 +98,19 @@
 #siebe .cards {
   display: block;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -25vw;
+  left: -25vw;
   margin: 0 auto;
   animation: rotate 10s linear infinite;
-  width: 100vw;
-  height: 100vh;
+  width: 150vw;
+  height: 150vh;
   transform-origin: center center;
   opacity: 0;
+}
+#siebe .koningin {
+  width: 20vw;
+  height: 100%;
+  margin: 0 auto;
 }
 #siebe .cirkel1 {
   width: 100%;
