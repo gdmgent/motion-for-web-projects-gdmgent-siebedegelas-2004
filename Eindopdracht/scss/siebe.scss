@@ -100,9 +100,22 @@
     }
 
     .cards {
+        display: block;
+        position: fixed;
+        // top: 20vw;
+        // left: 11vw;
+        top: 0;
+        left: 0;
         margin: 0 auto;
-        rotate: 90deg;
+        animation: rotate 10s linear infinite;
+        // rotate: 100deg;
+        width: 100vw;
+        height: 100vh;
+        transform-origin: center center;
+        opacity: 0;
     }
+    
+
 
 /*
 * Delen
@@ -170,5 +183,12 @@
     
 
 
-
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }

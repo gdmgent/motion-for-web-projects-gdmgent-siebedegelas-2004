@@ -96,8 +96,16 @@
   color: rgb(255, 39, 39);
 }
 #siebe .cards {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
   margin: 0 auto;
-  rotate: 90deg;
+  animation: rotate 10s linear infinite;
+  width: 100vw;
+  height: 100vh;
+  transform-origin: center center;
+  opacity: 0;
 }
 #siebe .cirkel1 {
   width: 100%;
@@ -148,4 +156,12 @@
 #siebe #text-illuminati #illuminati-img {
   opacity: 0;
   top: 50vw;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=siebe.css.map */

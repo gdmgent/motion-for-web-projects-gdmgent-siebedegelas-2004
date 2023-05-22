@@ -128,14 +128,21 @@ function siebe(fase) {
                 y: -500,
                 x: -500,
                 ease: "power2.easeIn" 
-            }, "diamond+=0.6")
-
-
-            .add('diamond2')
+            }, "diamond")
+         /* 
+         ** Cards 
+         */
+            .add('cards')
             .to("#siebe .cards", {
+                opacity: 1,
+            }, 'cards')
+         /* 
+         ** Chill 
+         */
+            .add('chill')
+            .to("#siebe .chill", {
                 opacity: 0,
-                x: -500,
-            }, 'diamond2')
+            }, 'chill')
          /* 
          ** Cirkel 2 
          */
@@ -188,6 +195,10 @@ function siebe(fase) {
                 borderRadius: "0",
                 opacity: 1,
             } , 'box')
+            .to("#siebe .cards", {
+                opacity: 0,
+                y: -1000,
+            }, 'illuminati')
 
 
             /* 
