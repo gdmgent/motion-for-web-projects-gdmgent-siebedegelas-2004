@@ -186,8 +186,8 @@ function siebe(fase) {
                 y: '10vw',
                 opacity: 0,
                 backgroundColor: "#2b3628",
-                width: '10vw',
-                height: '10vw',
+                width: '5vw',
+                height: '5vw',
             }, 'cirkel2')
             .from("#siebe p:first-of-type", {
                 opacity: 0,
@@ -208,7 +208,7 @@ function siebe(fase) {
                 width: '10vw',
                 height: '10vw',
                 borderRadius: "0",
-                opacity: 0,
+                opacity: 1,
             } , 'box')
             .to("#siebe .cards", {
                 opacity: 0,

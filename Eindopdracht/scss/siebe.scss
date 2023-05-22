@@ -104,14 +104,14 @@
         position: fixed;
         // top: 20vw;
         // left: 11vw;
-        top: -25vw;
-        left: -25vw;
+        top: 0vw;
+        left: 0vw;
         margin: 0 auto;
         animation: rotate 10s linear infinite;
         // rotate: 100deg;
-        width: 150vw;
-        height: 150vh;
-        transform-origin: center center;
+        width: 100vw;
+        height: 100vh;
+        transform-origin: center;     
         opacity: 0;
     }
     
