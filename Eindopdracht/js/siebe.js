@@ -18,6 +18,10 @@ function siebe(fase) {
                 opacity: 0,
                 x: -300,    
             }, 'start')
+            .from("#siebe #measurments", {
+                opacity: 0,
+                x: -20000,
+            }, 'start')
             .to("#siebe .box", {
                 borderRadius: "50%",
                 backgroundColor: "#404E4D",
@@ -26,13 +30,15 @@ function siebe(fase) {
                 top: 'calc(50vh - 20vw)',
                 width: '40vw',
                 height: '40vw',
-                onComplete: function () {
-                  var image = document.createElement('img');
-                  image.src = './images/cirkel.png';
-                  image.classList.add('cirkel-image');
-                  document.querySelector('#siebe .box').appendChild(image);
-                },
+            //     onComplete: function () {
+            //       var image = document.createElement('img');
+            //       image.src = './images/cirkel.png';
+            //       image.classList.add('cirkel-image');
+            //       document.querySelector('#siebe .box').appendChild(image);
+            //     },
               }, 'start+=0.5')
+
+              
          /* 
          ** Cirkel 1
          */
@@ -46,6 +52,9 @@ function siebe(fase) {
                 width: '40vw',
                 height: '40vw',
             }, 'cirkel1')
+            .to("#siebe #measurments", {
+                opacity: 1,
+            }, 'cirkel1+=0.5')
             .to("#siebe .box", {
                 borderRadius: "180"
             }, 'cirkel1')
@@ -59,15 +68,18 @@ function siebe(fase) {
                 rotateY: 45,
                 rotateZ: 45,
             }, 'reset-img')
-            .to(".cirkel-image", {
+            .to("#siebe #measurments", {
                 opacity: 0,
-                    onComplete: function () {
-                    var image = document.querySelector('.cirkel-image');
-                    if (image) {
-                        image.parentNode.removeChild(image);
-                    }
-                },
-            }, 'cirkel1+=0.5')
+            }, 'reset-img+=0.5')	
+            // .to(".cirkel-image", {
+            //     opacity: 0,
+            //         onComplete: function () {
+            //         var image = document.querySelector('.cirkel-image');
+            //         if (image) {
+            //             image.parentNode.removeChild(image);
+            //         }
+            //     },
+            // }, 'cirkel1+=0.5')
          /* 
          ** Reset image
          */
@@ -117,6 +129,13 @@ function siebe(fase) {
                 x: -500,
                 ease: "power2.easeIn" 
             }, "diamond+=0.6")
+
+
+            .add('diamond2')
+            .to("#siebe .cards", {
+                opacity: 0,
+                x: -500,
+            }, 'diamond2')
          /* 
          ** Cirkel 2 
          */
