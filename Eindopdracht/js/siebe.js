@@ -18,6 +18,9 @@ function siebe(fase) {
                 opacity: 0,
                 x: -300,
             }, 'start')
+            .from("#siebe p:last-of-type", {
+                y: 300,
+            }, 'start')
             .from("#siebe #measurments", {
                 opacity: 0,
                 x: -20000,
@@ -126,7 +129,7 @@ function siebe(fase) {
             .to("#siebe #box", {
                 opacity: 0,
                 y: -500,
-                x: -500,
+                x: -400,
                 ease: "power2.easeIn"
             }, "diamond")
          /*
@@ -193,6 +196,9 @@ function siebe(fase) {
                 opacity: 0,
                 x: -300,
             }, 'cirkel2')
+         /*
+         ** Illuminati
+         */
             .add('illuminati')
             .from("#text-illuminati", {
                 x: -400,
@@ -208,15 +214,36 @@ function siebe(fase) {
                 width: '10vw',
                 height: '10vw',
                 borderRadius: "0",
-                opacity: 1,
+                opacity: 0,
             } , 'box')
             .to("#siebe .cards", {
                 opacity: 0,
                 y: -1000,
             }, 'illuminati')
+        /*
+         ** Pizza
+         */
+         .add('pizza')
+         .to("#siebe .box", {
+             backgroundColor: "#f8b62c",
+             width: '20vw',
+             height: '20vw',
+             borderRadius: "180",
+             border: '10px solid #75491c',
+             opacity: 1,
+         })
+         .to("#siebe .box", {
+            backgroundColor: "#f8b62c",
+            width: '20vw',
+            height: '20vw',
+            borderRadius: "180",
+            border: '10px solid #75491c',
+        }, 'pizza')
+        .to("#siebe .honger", {
+            y: -1000,
+        }, 'honger')
 
-
-            /*
+        /*
          ** Reset
          */
             .add('reset')
@@ -232,8 +259,12 @@ function siebe(fase) {
                 x: '0vw',
                 left: '40vw',
                 top: 'calc(50vh - 10vw)',
+                border: 'none',
             }, 'reset');
+
+
     }
+
 }
 
 
