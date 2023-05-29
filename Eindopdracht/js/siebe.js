@@ -17,6 +17,7 @@ function siebe(fase) {
             .from("#siebe p:first-of-type", {
                 opacity: 0,
                 x: -300,
+                y: 300,
             }, 'start')
             .from("#siebe p:last-of-type", {
                 y: 300,
@@ -211,9 +212,9 @@ function siebe(fase) {
             }, "illuminati-img")
             .to ("#siebe .box", {
                 backgroundColor: "#2b3628",
-                width: '10vw',
-                height: '10vw',
-                borderRadius: "0",
+                width: '15vw',
+                height: '15vw',
+                borderRadius: "180",
                 opacity: 0,
             } , 'box')
             .to("#siebe .cards", {
@@ -229,7 +230,7 @@ function siebe(fase) {
              width: '20vw',
              height: '20vw',
              borderRadius: "180",
-             border: '10px solid #75491c',
+             border: '20px solid #75491c',
              opacity: 1,
          })
          .to("#siebe .box", {
@@ -237,11 +238,25 @@ function siebe(fase) {
             width: '20vw',
             height: '20vw',
             borderRadius: "180",
-            border: '10px solid #75491c',
+            border: '20px solid #75491c',
         }, 'pizza')
-        .to("#siebe .honger", {
-            y: -1000,
-        }, 'honger')
+        .to("#siebe #honger", {
+            x: -1000,
+        }, 'pizza')
+        // Sauce
+        .add('tSauce')
+        .to("#siebe #sauce", {
+            opacity: 1,
+            x: -200,
+            rotateZ: -5,
+            ease: "power2.easeIn",
+        }, "tSauce")
+        // .to("#siebe #cheese", {
+        //     opacity: 1,
+        //     x: -400,
+        //     rotateZ: 5,
+        //     ease: "power2.easeIn"
+        // }, "tSauce")
 
         /*
          ** Reset

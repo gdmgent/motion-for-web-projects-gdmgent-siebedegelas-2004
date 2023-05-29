@@ -71,7 +71,7 @@
         text-align: center;
     }
 
-    div.info {
+    .info {
         text-transform: uppercase;
         font-weight: 700;
         position: relative;
@@ -88,7 +88,7 @@
         &.info-honger {
             text-align: left;
             color: #f8b62c; 
-            text-shadow: 2px 2px 4px #8b4513;
+            text-shadow: 4px 4px 8px #8b4513;
             mix-blend-mode: normal;
             margin-top: 20rem;
             line-height: 6rem;
@@ -157,7 +157,7 @@
             &:first-of-type {
                 width: 40vw;
                 padding: 2rem;
-                margin-top: 15rem;
+                margin-top: 20vw;
                 margin-left: 5rem;
             }
         } 
@@ -183,6 +183,11 @@
         top: 50vw;
         }
 
+    #sauce {
+        margin: calc(100vw - 50vh) auto;
+        }
+    }
+
     #text-illuminati {
         text-transform: uppercase;
         font-weight: 700;
@@ -204,6 +209,10 @@
         }
     }
     
+    .empty {
+        width: 100%;
+        height: 100vh;
+    }
 
 
     @keyframes rotate {
@@ -214,4 +223,3 @@
             transform: rotate(360deg);
         }
     }
-}
