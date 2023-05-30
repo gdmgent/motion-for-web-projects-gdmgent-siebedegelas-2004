@@ -247,16 +247,9 @@ function siebe(fase) {
         .add('tSauce')
         .to("#siebe #sauce", {
             opacity: 1,
-            x: -200,
-            rotateZ: -5,
             ease: "power2.easeIn",
         }, "tSauce")
-        // .to("#siebe #cheese", {
-        //     opacity: 1,
-        //     x: -400,
-        //     rotateZ: 5,
-        //     ease: "power2.easeIn"
-        // }, "tSauce")
+
 
         /*
          ** Reset
