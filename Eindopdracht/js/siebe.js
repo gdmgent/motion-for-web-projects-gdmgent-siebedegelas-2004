@@ -227,29 +227,52 @@ function siebe(fase) {
          */
          .add('pizza')
          .to("#siebe .box", {
-             backgroundColor: "#f8b62c",
+             backgroundColor: "#fee194",
              width: '20vw',
              height: '20vw',
              borderRadius: "180",
-             border: '20px solid #75491c',
+             border: '20px solid #bc6201',
              opacity: 1,
          })
          .to("#siebe .box", {
-            backgroundColor: "#f8b62c",
+            backgroundColor: "#fee194",
             width: '20vw',
             height: '20vw',
             borderRadius: "180",
-            border: '20px solid #75491c',
+            border: '20px solid #bc6201',
         }, 'pizza')
         .to("#siebe #honger", {
             x: -1000,
         }, 'pizza')
         // Sauce
         .add('tSauce')
-        .to("#siebe #sauce", {
+        .to("#siebe .sauce", {
             opacity: 1,
             ease: "power2.easeIn",
         }, "tSauce")
+        .to("#siebe .cheese", {
+            opacity: 1,
+            ease: "power2.easeIn",
+        }, "tSauce")
+        .to("#siebe .pepperoni", {
+            opacity: 1,
+            ease: "power2.easeIn",
+        }, "tSauce")
+        .to("#siebe .box", {
+            backgroundColor: "#fee194",
+            width: '20vw',
+            height: '20vw',
+            borderRadius: "180",
+            border: '20px solid #bc6201',
+        }, 'tSauce')
+        .add('tSauce2')
+        .to("#siebe .box", {
+            backgroundColor: "#fee194",
+            width: '20vw',
+            height: '20vw',
+            borderRadius: "180",
+            border: '20px solid #bc6201',
+        }, 'pizza')
 
 
         /*

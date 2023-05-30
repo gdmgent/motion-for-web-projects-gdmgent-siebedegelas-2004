@@ -87,6 +87,7 @@
         filter: drop-shadow(0 8px 4px rgba(22, 62, 58, 0.8));
         mix-blend-mode: exclusion;
         &.info-honger {
+            position: relative;
             text-align: left;
             color: #f8b62c; 
             text-shadow: 4px 4px 8px #8b4513;
@@ -185,9 +186,38 @@
         top: 50vw;
         }
 
-    #sauce {
-        margin: calc(100vw - 50vh) auto;
-        }
+    .deeg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+        .sauce {
+            z-index: 100;
+            position: fixed;
+            left: calc(100vw - 59vw);
+            top: 32vh; 
+            opacity: 0;
+            }
+
+        .cheese {
+            z-index: 100;
+            position: fixed;
+            left: calc(100vw - 59vw);
+            top: 32vh; 
+            opacity: 0;
+            }
+
+        .pepperoni {
+            z-index: 100;
+            position: fixed;
+            left: calc(100vw - 59vw);
+            top: 32vh; 
+            opacity: 0;
+            }
+        
+      }
+    
+
     }
 
     #text-illuminati {
