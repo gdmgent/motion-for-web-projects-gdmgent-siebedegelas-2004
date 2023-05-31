@@ -49,6 +49,14 @@
   width: 100%;
   height: 100vh;
 }
+#siebe .attention {
+  width: 100%;
+  height: 200vh;
+}
+#siebe .theorem {
+  width: 100%;
+  height: 100vh;
+}
 #siebe .bg {
   position: absolute;
   width: 100%;
@@ -142,9 +150,18 @@
   margin-top: 20rem;
   line-height: 6rem;
 }
+#siebe .info.info-attention {
+  position: relative;
+  text-align: right;
+  color: #dc002e;
+  text-shadow: 4px 4px 8px #222222;
+  mix-blend-mode: none;
+  margin-top: 20rem;
+  line-height: 6rem;
+}
 #siebe .info small {
   display: block;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 #siebe .info-poker {
   color: hsl(0, 0%, 6%);

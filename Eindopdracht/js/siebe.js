@@ -320,15 +320,69 @@ function siebe(fase) {
 // Add 12
             .add('eat')
                 .to("#siebe .baked", {
-                    x: 2000,
                     opacity: 0,
                 }, "eat")
                 .to("#siebe .ate", {
                     x: -900,
                 }, 'eat')
+                .to("#siebe .box", {
+                    backgroundColor: "#fee194",
+                    width: '20vw',
+                    height: '20vw',
+                    borderRadius: "180",
+                    border: '0px solid #bc6201',
+                    opacity: 1,
+                    display: "block",
+                }, 'eat')
+                
         /*
          ** Reset
          */
+
+// Add 13
+        /*
+         ** Attention
+         */
+                .add('attention')
+                .to("#siebe .box", {
+                    backgroundColor: "#dc002e",
+                    width: '10vw',
+                    height: '30vw',
+                    y: '0vw',
+                    x: '-10vw',
+                    borderRadius: "0",
+                    opacity: 1,
+                    display: "block",
+                }, 'attention')
+                    .from("#siebe .hey", {
+                        x: -1000,
+                    }, 'attention')
+
+                .add('rectangle')
+                    .to("#siebe .box", {
+                        backgroundColor: "#dc002e",
+                        width: '10vw',
+                        height: '30vw',
+                        y: '0vw',
+                        x: '-10vw',
+                        borderRadius: "0",
+                        opacity: 1,
+                        display: "block",
+                    }, 'rectangle')
+                
+
+
+// Add 14
+                        
+
+// Add 15
+        /*
+         ** Pythagoras
+         */
+            // .add('pythagoras')
+            //     .to("#siebe .box", {
+            //     }, 'pythagoras')
+
 // Add 
             .add('reset')
                 .to("#siebe .box", {

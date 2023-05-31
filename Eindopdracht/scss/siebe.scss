@@ -53,6 +53,16 @@
     height: 100vh;
   }
 
+  .attention {
+    width: 100%;
+    height: 200vh;
+  }
+
+  .theorem {
+    width: 100%;
+    height: 100vh;
+  }
+
   .bg {
     position: absolute;
     width: 100%;
@@ -154,11 +164,20 @@
       margin-top: 20rem;
       line-height: 6rem;
     }
+    &.info-attention {
+      position: relative;
+      text-align: right;
+      color: #dc002e;
+      text-shadow: 4px 4px 8px #222222;
+      mix-blend-mode: none;
+      margin-top: 20rem;
+      line-height: 6rem;
+    }
 
 
     small {
       display: block;
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 
