@@ -14,6 +14,7 @@ function siebe(fase) {
          /*
          ** Start
          */
+// Add 1
             .add('start')
             .from("#siebe p:first-of-type", {
                 opacity: 0,
@@ -47,6 +48,7 @@ function siebe(fase) {
          /*
          ** Cirkel 1
          */
+// Add 2
             .add('cirkel1')
             .to("#siebe .box", {
                 borderRadius: "50%" ,
@@ -88,6 +90,7 @@ function siebe(fase) {
          /*
          ** Reset image
          */
+// Add 3
             .add('reset-img')
             .to("#siebe .box", {
                 backgroundColor: "red",
@@ -102,6 +105,7 @@ function siebe(fase) {
          /*
          ** Diamond poker
          */
+// Add 4
             .add('diamond')
             .to("#siebe .info-poker", {
                 opacity: 0,
@@ -137,6 +141,7 @@ function siebe(fase) {
          /*
          ** Cards
          */
+// Add 5
             .add('cards')
             .to("#siebe .cards", {
                 opacity: 1,
@@ -159,6 +164,7 @@ function siebe(fase) {
          /*
          ** Chill
          */
+// Add 6
             .add('chill')
             .to("#siebe .chill", {
                 opacity: 0,
@@ -166,6 +172,7 @@ function siebe(fase) {
          /*
          ** Cirkel 2
          */
+// Add 7
             .add('cirkel2')
             .to("#siebe .box", {
                 backgroundColor: "#7d98a1",
@@ -201,6 +208,7 @@ function siebe(fase) {
          /*
          ** Illuminati
          */
+// Add 8
             .add('illuminati')
             .from("#text-illuminati", {
                 x: -400,
@@ -225,6 +233,7 @@ function siebe(fase) {
         /*
          ** Pizza
          */
+// Add 9
          .add('pizza')
          .to("#siebe .box", {
              backgroundColor: "#fee194",
@@ -245,6 +254,7 @@ function siebe(fase) {
             x: -1000,
         }, 'pizza')
         // Sauce
+// Add 10
         .add('tSauce')
         .to("#siebe .sauce", {
             opacity: 1,
@@ -265,18 +275,11 @@ function siebe(fase) {
             borderRadius: "180",
             border: '20px solid #bc6201',
         }, 'tSauce')
-        .add('tSauce2')
-        .to("#siebe .box", {
-            backgroundColor: "#fee194",
-            width: '20vw',
-            height: '20vw',
-            borderRadius: "180",
-            border: '20px solid #bc6201',
-        }, 'pizza')
 
         /*
          ** Reset
          */
+// Add 11
             .add('reset')
             .to("#siebe .box", {
                 borderRadius: "0" ,

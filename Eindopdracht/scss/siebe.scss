@@ -13,7 +13,16 @@
 }
 
 #siebe {
-  // Latest push, without the pizza
+  .geo {
+    width: 100%;
+    height: 200vh;
+  }
+
+  .game {
+    width: 100%;
+    height: 300vh;
+  }
+
   .bg {
     position: absolute;
     width: 100%;
@@ -144,7 +153,6 @@
 
   .koningin {
     width: 20vw;
-    height: 100%;
     margin: 0 auto;
   }
 
