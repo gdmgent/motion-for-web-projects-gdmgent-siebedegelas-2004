@@ -22,7 +22,15 @@
 }
 #siebe .game {
   width: 100%;
-  height: 300vh;
+  height: 500vh;
+}
+#siebe .illu {
+  width: 100%;
+  height: 100vh;
+}
+#siebe .food {
+  width: 100%;
+  height: 200vh;
 }
 #siebe .bg {
   position: absolute;
