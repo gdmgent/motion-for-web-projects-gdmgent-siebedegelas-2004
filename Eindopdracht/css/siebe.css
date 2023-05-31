@@ -222,7 +222,7 @@
   position: fixed;
   left: 41vw;
   top: 32vh;
-  opacity: 1;
+  display: none;
 }
 #siebe .deeg .baked {
   z-index: 1;

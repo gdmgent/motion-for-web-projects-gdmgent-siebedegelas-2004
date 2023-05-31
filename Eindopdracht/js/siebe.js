@@ -16,9 +16,9 @@ function siebe(fase) {
          */
 // Add 1
             .add('start')
-                .to("#siebe .time", {
-                    backgroundColor: "red"
-                }, "start")
+                // .to("#siebe .time", {
+                //     backgroundColor: "red"
+                // }, "start")
                 .from("#siebe p:first-of-type", {
                     opacity: 0,
                     x: -300,
@@ -54,9 +54,9 @@ function siebe(fase) {
          */
 // Add 2
             .add('cirkel1')
-                .to("#siebe .time", {
-                    backgroundColor: "green"
-                }, "cirkel1")
+                // .to("#siebe .time", {
+                //     backgroundColor: "green"
+                // }, "cirkel1")
                 .to("#siebe .box", {
                     borderRadius: "50%" ,
                     backgroundColor: "#63595C",
@@ -91,9 +91,9 @@ function siebe(fase) {
                 .to("#siebe #measurments", {
                     opacity: 0,
                 }, 'reset-img')
-                .to("#siebe .time", {
-                    backgroundColor: "blue"
-                }, "reset-img")
+                // .to("#siebe .time", {
+                //     backgroundColor: "blue"
+                // }, "reset-img")
                 .to("#siebe .box", {
                     backgroundColor: "red",
                     width: '20vw',
@@ -109,9 +109,9 @@ function siebe(fase) {
          */
 // Add 4
             .add('diamond')
-                .to("#siebe .time", {
-                    backgroundColor: "yellow"
-                }, "diamond")
+                // .to("#siebe .time", {
+                //     backgroundColor: "yellow"
+                // }, "diamond")
                 .to("#siebe .info-poker", {
                     opacity: 0,
                     x: -500,
@@ -148,9 +148,9 @@ function siebe(fase) {
          */
 // Add 5
             .add('cards')
-                .to("#siebe .time", {
-                    backgroundColor: "orange"
-                }, "cards")
+                // .to("#siebe .time", {
+                //     backgroundColor: "orange"
+                // }, "cards")
                     .to("#siebe .cards", {
                         opacity: 1,
                     }, 'cards')
@@ -173,9 +173,9 @@ function siebe(fase) {
          */
 // Add 6
             .add('chill')
-            .to("#siebe .time", {
-                backgroundColor: "purple"
-            }, "chill")
+            // .to("#siebe .time", {
+            //     backgroundColor: "purple"
+            // }, "chill")
                 .to("#siebe .chill", {
                     opacity: 0,
                 }, 'chill')
@@ -189,9 +189,9 @@ function siebe(fase) {
          */
 // Add 7
             .add('cirkel2')   
-                .to("#siebe .time", {
-                    backgroundColor: "brown"
-                }, "circle2")
+                // .to("#siebe .time", {
+                //     backgroundColor: "brown"
+                // }, "circle2")
                 .to("#siebe .koningin", { 
                     y: +650
                 }, 'cirkel2')
@@ -259,25 +259,31 @@ function siebe(fase) {
             }, 'pizza')
             // Sauce, cheese and pepperoni
             .from("#siebe .sauce", {
+                display: "block",
                 x: -1000,
             }, "pizza")
             .from("#siebe .cheese", {
                 x: +1000,
+                display: "block",
             }, "pizza")
             .from("#siebe .pepperoni", {
                 y: -1000,
+                display: "block",
             }, "pizza")
 
   
 // Add 10
             .add('oven')
                 .to("#siebe .sauce", {
+                    display: "block",
                     x: 2000,
                 }, "oven")
                 .to("#siebe .cheese", {
+                    display: "block",
                     x: 2000,
                 }, "oven")
                 .to("#siebe .pepperoni", {
+                    display: "block",
                     x: 2000,
                 }, "oven")
                 .to("#siebe .box", {
