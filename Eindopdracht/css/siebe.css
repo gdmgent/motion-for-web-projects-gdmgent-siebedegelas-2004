@@ -45,6 +45,10 @@
   width: 100%;
   height: 200vh;
 }
+#siebe .ate {
+  width: 100%;
+  height: 100vh;
+}
 #siebe .bg {
   position: absolute;
   width: 100%;
@@ -116,6 +120,24 @@
   text-align: left;
   color: #f8b62c;
   text-shadow: 4px 4px 8px #8b4513;
+  mix-blend-mode: normal;
+  margin-top: 20rem;
+  line-height: 6rem;
+}
+#siebe .info.info-bakken {
+  position: relative;
+  text-align: center;
+  color: #c16814;
+  text-shadow: 4px 4px 8px #693a18;
+  mix-blend-mode: normal;
+  margin-top: 20rem;
+  line-height: 6rem;
+}
+#siebe .info.info-gegeten {
+  position: relative;
+  text-align: right;
+  color: #FFC700;
+  text-shadow: 4px 4px 8px #4a4a4a;
   mix-blend-mode: normal;
   margin-top: 20rem;
   line-height: 6rem;

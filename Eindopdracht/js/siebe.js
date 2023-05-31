@@ -287,6 +287,10 @@ function siebe(fase) {
                     x: 2000,
                     opacity: 0,
                 }, "oven")
+                .to("#siebe .graden", {
+                    y: -200,
+                    opacity: 1,
+                }, "oven")
 
 // Add 11
             .add('baked')
@@ -306,6 +310,16 @@ function siebe(fase) {
                     x: 0,
                     opacity: 1,
                 }, "baked")
+
+// Add 12
+            .add('eat')
+                .to("#siebe .baked", {
+                    x: 2000,
+                    opacity: 0,
+                }, "eat")
+                .to("#siebe .ate", {
+                    x: -900,
+                }, 'eat')
         /*
          ** Reset
          */
@@ -324,7 +338,10 @@ function siebe(fase) {
                     left: '40vw',
                     top: 'calc(50vh - 10vw)',
                     border: 'none',
-                }, 'reset');
+                }, 'reset')
+                .to("#siebe .baked", {
+                    opacity: 0,
+                }, "reset");
 
 
     }
