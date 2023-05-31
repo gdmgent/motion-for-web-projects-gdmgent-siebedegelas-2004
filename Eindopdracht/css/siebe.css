@@ -16,6 +16,15 @@
   * Delen
   */
 }
+#siebe .time {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  content: "";
+}
 #siebe .geo {
   width: 100%;
   height: 200vh;
