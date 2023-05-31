@@ -148,56 +148,53 @@ function siebe(fase) {
          */
 // Add 5
             .add('cards')
-                .to("#siebe .cards", {
-                    opacity: 1,
-                }, 'cards')
-                .to("#siebe .koningin", {
-                    opacity: 1,
-                    y: -300,
-                }, 'cards')
-                .to("#siebe .box", {
-                    backgroundColor: "#ff5555",
-                    width: '10vw',
-                    height: '10vw',
-                    borderRadius: "5%",
-                    rotateX: 45,
-                    rotateY: 45,
-                    rotateZ: 55,
-                    x: '10vw',
-                    y: '10vw',
-                }, 'cards')
+                .to("#siebe .time", {
+                    backgroundColor: "orange"
+                }, "cards")
+                    .to("#siebe .cards", {
+                        opacity: 1,
+                    }, 'cards')
+                    .to("#siebe .koningin", {
+                        opacity: 1,
+                    }, 'cards')
+                    .to("#siebe .box", {
+                        backgroundColor: "#ff5555",
+                        width: '10vw',
+                        height: '10vw',
+                        borderRadius: "5%",
+                        rotateX: 45,
+                        rotateY: 45,
+                        rotateZ: 55,
+                        x: '10vw',
+                        y: '10vw',
+                    }, 'cards')
          /*
          ** Chill
          */
 // Add 6
             .add('chill')
+            .to("#siebe .time", {
+                backgroundColor: "purple"
+            }, "chill")
                 .to("#siebe .chill", {
                     opacity: 0,
                 }, 'chill')
                 .to("#siebe .box", {
                     display: "none",
                 }, 'chill')
-                /*.to("#siebe .koningin", { 
-                    y: +400,
-                })*/
+
                 
          /*
          ** Cirkel 2
          */
 // Add 7
-            .add('cirkel2')
-                
-                /*.to("#siebe .box", {
-                    backgroundColor: "#7d98a1",
-                    width: '20vw',
-                    height: '20vw',
-                    borderRadius: "0",
-                    rotateX: 45,
-                    rotateY: 45,
-                    rotateZ: 45,
-                    x: '10vw',
+            .add('cirkel2')   
+                .to("#siebe .time", {
+                    backgroundColor: "brown"
+                }, "circle2")
+                .to("#siebe .koningin", { 
+                    y: +650
                 }, 'cirkel2')
-     
                 .to("#siebe .box", {
                     backgroundColor: "#2b3628",
                     width: '40vw',
@@ -212,7 +209,7 @@ function siebe(fase) {
                     width: '5vw',
                     height: '5vw',
                 }, 'cirkel2')
-                */
+                
                 .from("#siebe p:first-of-type", {
                     opacity: 0,
                     x: -300,
@@ -232,10 +229,11 @@ function siebe(fase) {
                     ease: "power2.easeIn"
                 }, "illuminati-img")
                 .to ("#siebe .box", {
-                    backgroundColor: "#2b3628",
-                    width: '15vw',
-                    height: '15vw',
+                    ackgroundColor: "#fee194",
+                    width: '20vw',
+                    height: '20vw',
                     borderRadius: "180",
+                    border: '20px solid #bc6201',
                     opacity: 0,
                 } , 'box')
                 .to("#siebe .cards", {
@@ -254,46 +252,64 @@ function siebe(fase) {
                 borderRadius: "180",
                 border: '20px solid #bc6201',
                 opacity: 1,
-            })
-            .to("#siebe .box", {
-                backgroundColor: "#fee194",
-                width: '20vw',
-                height: '20vw',
-                borderRadius: "180",
-                border: '20px solid #bc6201',
+                display: "block",
             }, 'pizza')
             .to("#siebe #honger", {
                 x: -1000,
             }, 'pizza')
-        // Sauce
-// Add 10
-/*
-        .add('tSauce')
-            .to("#siebe .sauce", {
-                opacity: 1,
-                ease: "power2.easeIn",
-            }, "tSauce")
-            .to("#siebe .cheese", {
-                opacity: 1,
-                ease: "power2.easeIn",
-            }, "tSauce")
-            .to("#siebe .pepperoni", {
-                opacity: 1,
-                ease: "power2.easeIn",
-            }, "tSauce")
-            .to("#siebe .box", {
-                backgroundColor: "#fee194",
-                width: '20vw',
-                height: '20vw',
-                borderRadius: "180",
-                border: '20px solid #bc6201',
-            }, 'tSauce')
-            */
+            // Sauce, cheese and pepperoni
+            .from("#siebe .sauce", {
+                x: -1000,
+            }, "pizza")
+            .from("#siebe .cheese", {
+                x: +1000,
+            }, "pizza")
+            .from("#siebe .pepperoni", {
+                y: -1000,
+            }, "pizza")
 
+  
+// Add 10
+            .add('oven')
+                .to("#siebe .sauce", {
+                    x: 2000,
+                }, "oven")
+                .to("#siebe .cheese", {
+                    x: 2000,
+                }, "oven")
+                .to("#siebe .pepperoni", {
+                    x: 2000,
+                }, "oven")
+                .to("#siebe .box", {
+                    x: 2000,
+                }, "oven")
+                .to("#siebe .baked", {
+                    x: 2000,
+                    opacity: 0,
+                }, "oven")
+
+// Add 11
+            .add('baked')
+                .to("#siebe .sauce", {
+                    opacity: 0,
+                }, "baked")
+                .to("#siebe .cheese", {
+                    opacity: 0,
+                }, "baked")
+                .to("#siebe .pepperoni", {
+                    opacity: 0,
+                }, "baked")
+                .to("#siebe .box", {
+                    x: "10vw",
+                }, "baked")
+                .to("#siebe .baked", {
+                    x: 0,
+                    opacity: 1,
+                }, "baked")
         /*
          ** Reset
          */
-// Add 11
+// Add 
             .add('reset')
                 .to("#siebe .box", {
                     borderRadius: "0" ,

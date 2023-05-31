@@ -42,6 +42,11 @@
     width: 100%;
     height: 200vh;
   }
+  
+  .oven {
+    width: 100%;
+    height: 200vh;
+  }
 
 
   .bg {
@@ -175,7 +180,6 @@
   .koningin {
     width: 20vw;
     margin: 0 auto;
-    //transform: translateY(+400px);
   }
 
   /*
@@ -219,7 +223,15 @@
     .sauce,
     .cheese,
     .pepperoni {
-      z-index: 100;
+      z-index: 1;
+      position: fixed;
+      left: calc(100vw - 59vw);
+      top: 32vh;
+      opacity: 1;
+    }
+
+    .baked {
+      z-index: 1;
       position: fixed;
       left: calc(100vw - 59vw);
       top: 32vh;
