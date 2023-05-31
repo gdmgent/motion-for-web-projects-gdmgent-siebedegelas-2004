@@ -103,7 +103,7 @@ function siebe(fase) {
          ** Diamond poker
          */
             .add('diamond')
-            .to("#siebe #info-poker", {
+            .to("#siebe .info-poker", {
                 opacity: 0,
                 x: -500,
             }, 'diamond')
@@ -273,7 +273,6 @@ function siebe(fase) {
             borderRadius: "180",
             border: '20px solid #bc6201',
         }, 'pizza')
-
 
         /*
          ** Reset
