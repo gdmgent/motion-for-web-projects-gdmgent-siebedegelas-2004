@@ -182,6 +182,12 @@ function siebe(fase) {
                 .to("#siebe .box", {
                     display: "none",
                 }, 'chill')
+                .to("#siebe .koningin", { 
+                    y: +500
+                }, 'chill')
+                .to("#siebe .box", {
+                    y: '18vw',
+                }, 'chill')
 
                 
          /*
@@ -193,7 +199,7 @@ function siebe(fase) {
                 //     backgroundColor: "brown"
                 // }, "circle2")
                 .to("#siebe .koningin", { 
-                    y: +650
+                    y: +1000
                 }, 'cirkel2')
                 .to("#siebe .box", {
                     backgroundColor: "#2b3628",
@@ -241,14 +247,15 @@ function siebe(fase) {
                     y: -1000,
                 }, 'illuminati')
 
+                
+
         /*
          ** Pizza
          */
 // Add 9
          .add('pizza')
             .to("#siebe #honger", {
-                x: -100,
-                y: 500,
+                y: 1400,
             }, 'pizza')
             .to("#siebe .box", {
                 backgroundColor: "#fee194",
@@ -263,10 +270,10 @@ function siebe(fase) {
             // Sauce, cheese and pepperoni
             .from("#siebe .sauce", {
                 display: "block",
-                x: -1000,
+                x: -1500,
             }, "pizza")
             .from("#siebe .cheese", {
-                x: +1000,
+                x: +1500,
                 display: "block",
             }, "pizza")
             .from("#siebe .pepperoni", {
@@ -290,7 +297,7 @@ function siebe(fase) {
                     x: 2000,
                 }, "oven")
                 .to("#siebe .box", {
-                    x: 2000,
+                    x: 2200,
                 }, "oven")
                 .to("#siebe .baked", {
                     x: 2000,
@@ -326,7 +333,7 @@ function siebe(fase) {
                     opacity: 0,
                 }, "eat")
                 .to("#siebe .ate", {
-                    x: -900,
+                    x: -2000,
                 }, 'eat')
                 .to("#siebe .box", {
                     backgroundColor: "#fee194",
@@ -348,7 +355,7 @@ function siebe(fase) {
          */
                 .add('attention')
                 .to("#siebe .box", {
-                    backgroundColor: "#dc002e",
+                    backgroundColor: "#E74646",
                     width: '10vw',
                     height: '30vw',
                     y: '0vw',
@@ -363,7 +370,7 @@ function siebe(fase) {
 
                 .add('rectangle')
                     .to("#siebe .box", {
-                        backgroundColor: "#dc002e",
+                        backgroundColor: "#E74646",
                         width: '10vw',
                         height: '30vw',
                         y: '0vw',

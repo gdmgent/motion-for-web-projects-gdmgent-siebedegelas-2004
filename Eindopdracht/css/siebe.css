@@ -11,11 +11,6 @@
   --outerSpace: #404E4D;
 }
 
-#siebe {
-  /*
-  * Delen
-  */
-}
 #siebe .time {
   position: fixed;
   width: 100px;
@@ -153,7 +148,7 @@
 #siebe .info.info-attention {
   position: relative;
   text-align: right;
-  color: #dc002e;
+  color: #E74646;
   text-shadow: 4px 4px 8px #222222;
   mix-blend-mode: none;
   margin-top: 20rem;
