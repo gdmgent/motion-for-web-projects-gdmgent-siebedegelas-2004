@@ -327,13 +327,14 @@ function siebe(fase) {
                     opacity: 1,
                 }, "baked")
 
+
 // Add 12
             .add('eat')
                 .to("#siebe .baked", {
                     opacity: 0,
                 }, "eat")
-                .to("#siebe .ate", {
-                    x: -2000,
+                .to("#siebe #gegeten", {
+                    x: -1200,
                 }, 'eat')
                 .to("#siebe .box", {
                     backgroundColor: "#fee194",
@@ -363,10 +364,11 @@ function siebe(fase) {
                     borderRadius: "0",
                     opacity: 1,
                     display: "block",
-                }, 'attention')
+                    }, 'attention')
                     .from("#siebe .hey", {
                         x: -1000,
                     }, 'attention')
+
 
                 .add('rectangle')
                     .to("#siebe .box", {
@@ -379,21 +381,44 @@ function siebe(fase) {
                         opacity: 1,
                         display: "block",
                     }, 'rectangle')
+                    .to("#siebe .red-square", {
+                        display: "block",
+                    }, "rectangle")
+
                 
 
-
 // Add 14
-                        
-
-// Add 15
         /*
          ** Pythagoras
          */
-            // .add('pythagoras')
-            //     .to("#siebe .box", {
-            //     }, 'pythagoras')
+            .add('pythagoras')
+                .to("#siebe .box", {
+                }, 'pythagoras')
+                .to("#siebe .red-square", {
+                    display: "none",
+                }, "pythagoras")
+                .to ("#siebe .box", {
+                    borderRadius: "0" ,
+                    backgroundColor: '#60ab98',
+                    rotateX: 0,
+                    rotateY: 0,
+                    rotateZ: 0,
+                    width: '20vw',
+                    height: '20vw',
+                    y: '0vw',
+                    x: '0vw',
+                    left: '40vw',
+                    top: 'calc(50vh - 10vw)',
+                    border: 'none',
+                } , 'pyhtagoras')
+// Add 15
+            .add('pythagoras2')
+                .to("#siebe .red-square", {
+                    display: "none",
+                }, "pythagoras")
+                
 
-// Add 
+// Add reset
             .add('reset')
                 .to("#siebe .box", {
                     borderRadius: "0" ,

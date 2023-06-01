@@ -50,7 +50,7 @@
 }
 #siebe .theorem {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
 }
 #siebe .bg {
   position: absolute;
@@ -154,6 +154,16 @@
   margin-top: 20rem;
   line-height: 6rem;
 }
+#siebe .info.info-theorem {
+  position: relative;
+  text-align: right;
+  color: #60ab98;
+  text-shadow: 4px 4px 8px #222222;
+  mix-blend-mode: none;
+  font-size: 8rem;
+  margin-top: 20rem;
+  line-height: 9rem;
+}
 #siebe .info small {
   display: block;
   font-size: 4rem;
@@ -242,6 +252,17 @@
   left: 41vw;
   top: 32vh;
   opacity: 0;
+}
+#siebe .square {
+  position: relative;
+}
+#siebe .square .red-square {
+  z-index: 1;
+  position: fixed;
+  left: 20vw;
+  top: 75vh;
+  display: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.8), 0 4px 6px -4px rgba(0, 0, 0, 0.8);
 }
 #siebe #text-illuminati {
   text-transform: uppercase;
