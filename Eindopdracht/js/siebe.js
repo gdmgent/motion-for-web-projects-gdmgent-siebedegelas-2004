@@ -240,11 +240,16 @@ function siebe(fase) {
                     opacity: 0,
                     y: -1000,
                 }, 'illuminati')
+
         /*
          ** Pizza
          */
 // Add 9
          .add('pizza')
+            .to("#siebe #honger", {
+                x: -100,
+                y: 500,
+            }, 'pizza')
             .to("#siebe .box", {
                 backgroundColor: "#fee194",
                 width: '20vw',
@@ -254,9 +259,7 @@ function siebe(fase) {
                 opacity: 1,
                 display: "block",
             }, 'pizza')
-            .to("#siebe #honger", {
-                x: -1000,
-            }, 'pizza')
+
             // Sauce, cheese and pepperoni
             .from("#siebe .sauce", {
                 display: "block",
